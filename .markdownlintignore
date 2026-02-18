@@ -1,0 +1,8 @@
+.github/CODE_OF_CONDUCT.md
+CHANGELOG.md
+lib/
+node_modules/
+gen/
+note.md
+.cursor/
+.vs-code/
