@@ -10,6 +10,7 @@
       "biome.json",
       "src/**/*",
       "packages/**/*",
+      "test/**/*",
       "!**/package.json",
       "!**/.cursor",
       "!**/.vs-code",
@@ -20,7 +21,8 @@
   },
   "formatter": {
     "enabled": true,
-    "indentStyle": "space"
+    "indentStyle": "space",
+    "lineEnding": "lf"
   },
   "linter": {
     "enabled": true,
@@ -66,13 +68,7 @@
         "noConsole": {
           "level": "error",
           "options": {
-            "allow": [
-              "assert",
-              "error",
-              "info",
-              "warn",
-              "debug"
-            ]
+            "allow": ["assert", "error", "info", "warn", "debug"]
           }
         }
       }
@@ -82,10 +78,10 @@
     "formatter": {
       "quoteStyle": "single",
       "lineWidth": 120,
-      "indentWidth": 2,
       "indentStyle": "space",
       "semicolons": "asNeeded",
-      "trailingCommas": "none"
+      "trailingCommas": "none",
+      "lineEnding": "lf"
     }
   },
   "assist": {

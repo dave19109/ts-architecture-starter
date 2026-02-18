@@ -28,13 +28,10 @@
     "tsconfig.build.json",
     ".commitlintrc.js",
     "jest.setup.ts",
-    "coverage/**",
+    "**/coverage/**",
     "**/dist/**",
-    "build/**",
-    "logs/**",
-    "logs/**",
-    "docs/**",
-    "PULL_REQUEST_TEMPLATE.md"
+    "**/build/**",
+    "**/logs/**",
   ],
   "dictionaries": [
     "typescript",
