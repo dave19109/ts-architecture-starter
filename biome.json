@@ -20,9 +20,8 @@
     "ignoreUnknown": false
   },
   "formatter": {
-    "enabled": true,
     "indentStyle": "space",
-    "lineEnding": "lf"
+    "lineWidth": 120
   },
   "linter": {
     "enabled": true,

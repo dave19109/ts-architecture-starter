@@ -60,3 +60,4 @@ pnpm-lock.yaml
 .eslintignore
 .eslintrc*
 .husky
+biome.json
