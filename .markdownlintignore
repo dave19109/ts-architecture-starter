@@ -1,5 +1,6 @@
-.github/CODE_OF_CONDUCT.md
+.github/
 CHANGELOG.md
+PULL_REQUEST_TEMPLATE.md
 lib/
 node_modules/
 gen/

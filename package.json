@@ -12,10 +12,14 @@
     "check:packagejson": "npmPkgJsonLint .",
     "check:markdown": "markdownlint **/*.md .github/**/*.md",
     "check:staged": "lint-staged",
-    "fix:lint": "biome check --write",
+    "fix": "run-p fix:*",
+    "fix:format": "prettier --check --write --ignore-unknown .",
+    "fix:lint": "pnpm biome check --write",
+    "fix:markdown": "markdownlint --fix **/*.md .github/**/*.md",
     "reset-hard": "git clean -dfx && git reset --hard && pnpm install",
     "update-deps": "npm-check-updates -u",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "keywords": [
     "typescript",
@@ -48,6 +52,8 @@
     "cspell": "^9.6.4",
     "dotenv": "^17.3.1",
     "dotenv-expand": "^12.0.3",
+    "get-tsconfig": "^4.13.6",
+    "husky": "^9.1.7",
     "jest": "^30.2.0",
     "jest-extended": "^7.0.0",
     "lefthook": "^2.1.1",
@@ -70,5 +76,9 @@
   "engines": {
     "node": ">=22.12.0",
     "pnpm": ">=10.17.1"
+  },
+  "sync-dotenv": {
+    "emptyLines": false,
+    "comments": true
   }
 }
