@@ -1,14 +1,14 @@
-import * as dotenv from 'dotenv';
-import * as dotenvExpand from 'dotenv-expand';
-import { getTsconfig } from 'get-tsconfig';
-import type { Config } from 'jest';
-import { pathsToModuleNameMapper } from 'ts-jest';
+import * as dotenv from 'dotenv'
+import * as dotenvExpand from 'dotenv-expand'
+import { getTsconfig } from 'get-tsconfig'
+import type { Config } from 'jest'
+import { pathsToModuleNameMapper } from 'ts-jest'
 
 // Load environment variables from .env file
-dotenvExpand.expand(dotenv.config({ path: './.env.test' }));
+dotenvExpand.expand(dotenv.config({ path: './.env.test' }))
 
 // Read the tsconfig file to get compiler options
-const compilerOptions = getTsconfig('./tsconfig.json')?.config?.compilerOptions;
+const compilerOptions = getTsconfig('./tsconfig.json')?.config?.compilerOptions
 
 const config: Config = {
   // Automatically clear mock calls, instances, contexts and results before every test
@@ -73,6 +73,6 @@ const config: Config = {
   ],
   // Indicates whether each individual test should be reported during the run
   verbose: true
-};
+}
 
-export default config;
+export default config

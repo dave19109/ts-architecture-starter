@@ -17,4 +17,4 @@ module.exports = {
   scripts: {
     postchangelog: 'prettier -w CHANGELOG.md'
   }
-};
+}
