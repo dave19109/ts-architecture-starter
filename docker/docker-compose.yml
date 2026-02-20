@@ -1,12 +1,12 @@
 services:
-  api:
+  server:
     build:
       context: ..
       args:
         - PORT=${PORT}
       dockerfile: ./docker/Dockerfile
     image: ${IMAGE_NAME}:prod
-    container_name: api
+    container_name: server
     restart: always
     depends_on:
       - postgres
