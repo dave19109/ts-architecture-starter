@@ -68,13 +68,7 @@
         "noConsole": {
           "level": "error",
           "options": {
-            "allow": [
-              "assert",
-              "error",
-              "info",
-              "warn",
-              "debug"
-            ]
+            "allow": ["assert", "error", "info", "warn", "debug"]
           }
         }
       }
